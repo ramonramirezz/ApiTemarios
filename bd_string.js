@@ -4,6 +4,6 @@ var connection = {
   host : 'localhost',
   user : 'root',
   password : '',
-  database : 'curso',
+  database : 'sumarydb',
 };
 module.exports = connection;
