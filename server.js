@@ -18,8 +18,11 @@ var allowCrossDomain = function(req, res, next) {
 
 app.use(allowCrossDomain);
 
-var students = require('./routes/students');
-app.use('/students',students);
+// var students = require('./routes/students');
+// app.use('/students',students);
+
+var universitys = require('./routes/universitys');
+app.use('/University',universitys);
 
 http.listen(8080,function(){
 	console.log("Connected & Listen to port 8080");
