@@ -15,11 +15,11 @@ route.get('/',function(req,res){
         if(rows.length != 0){
             data["error"] = 0;
             data["Alumnos"] = rows;
-            res.json(data);
+            return res.json(data);
 
         }else{
             data["Alumnos"] = 'No alumnos Found..';
-            res.json(data);
+            return res.json(data);
         }
     });
 });
